@@ -1,17 +1,4 @@
-"""
-Document Vision Agent
 
-Responsibility: analyze chart/report images and extract structured data +
-descriptive findings from them. Backed by Azure AI Document Intelligence
-when credentials are configured; otherwise falls back to a lightweight
-local heuristic (image metadata + filename-based description) so the graph
-still runs end-to-end offline.
-
-Swapping in real Azure Document Intelligence:
-    pip install azure-ai-documentintelligence
-    set AZURE_DOC_INTEL_ENDPOINT and AZURE_DOC_INTEL_KEY
-    -> _analyze_with_azure() below becomes the active path automatically.
-"""
 from __future__ import annotations
 import os
 from PIL import Image

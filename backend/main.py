@@ -1,14 +1,3 @@
-"""
-FastAPI backend for the multi-agent report generator frontend.
-
-Run from the project root (not from inside backend/) so orchestrator.py,
-agents/, tools/, state.py, and config.py resolve as top-level imports:
-
-    uvicorn backend.main:app --reload --port 8000
-
-The frontend's vite.config.js proxies /api/* here in dev; nginx.conf does
-the same in the Docker build (see docker-compose.yml).
-"""
 import os
 import sys
 

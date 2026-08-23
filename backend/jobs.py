@@ -1,13 +1,3 @@
-"""
-In-memory job registry + the background function that actually runs the
-LangGraph pipeline for one job.
-
-This is intentionally simple (a dict, not Redis/Postgres) — good enough for
-a prototype and a single-process deployment. If you outgrow one process,
-swap JOBS for a Redis hash and run_job for a Celery/RQ task; nothing about
-the route handlers below needs to change since they only touch the small
-get/set/update functions in this file.
-"""
 from __future__ import annotations
 import os
 import threading

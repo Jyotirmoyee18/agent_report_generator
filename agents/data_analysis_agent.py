@@ -1,13 +1,4 @@
-"""
-Data Analysis Agent
 
-Responsibility: given a path to structured data (CSV today, extendable to
-SQL/warehouse queries), compute deterministic KPIs with pandas, then ask the
-LLM to turn those numbers into plain-language findings. Numbers themselves
-are never left to the LLM to "compute" — only to narrate — which is the same
-deterministic-lookup-plus-LLM-reasoning pattern used in the PO/Invoice
-reconciliation project on the resume.
-"""
 from __future__ import annotations
 import pandas as pd
 

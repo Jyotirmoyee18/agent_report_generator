@@ -1,12 +1,4 @@
-"""
-Generation Agent
 
-Responsibility: synthesize findings from the other agents into cross-cutting
-inferences, then render the final PPTX and/or Word deliverable. This is the
-"end-to-end content generation... in user-defined templates" piece of the
-JD — the other two agents feed it facts, this agent is the only one that
-touches the output document.
-"""
 from __future__ import annotations
 import os
 
