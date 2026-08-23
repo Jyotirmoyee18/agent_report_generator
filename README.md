@@ -31,12 +31,14 @@ never fires. Skip the CSV and the data agent never fires.
 
 # How to run it:
 # terminal 1
+```
 pip install -r backend/requirements.txt
 uvicorn backend.main:app --reload --port 8000
-
+```
 # terminal 2
+```
 cd frontend && npm install && npm run dev
-
+```
 
 ## Project layout
 
